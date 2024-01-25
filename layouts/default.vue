@@ -4,6 +4,7 @@
       <Panel />
     </div>
     <div>
+      <Header />
       <slot />
     </div>
   </section>

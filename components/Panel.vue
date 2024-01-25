@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex flex-col gap-[20px] items-center py-4 bg-[#F7F8FA] h-svh"
+    class="flex flex-col gap-[20px] items-center py-4 bg-[#F7F8FA] h-svh border border-r border-l-0 border-y-0"
   >
     <div>
       <img src="../assets/vector.svg" alt="" />
