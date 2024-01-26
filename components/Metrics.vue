@@ -40,10 +40,10 @@
         <p class="text-2xl font-semibold leading-none">270</p>
         <div class="flex gap-2">
           <div
-            class="rounded-full bg-[#FDEAEA] dark:bg-[#f5a5a5dc] flex px-2 py-1 gap-2 items-center"
+            class="rounded-full bg-[#FDEAEA] dark:bg-red-200 flex px-2 py-1 gap-2 items-center"
           >
             <img src="../assets/loss.svg" alt="" />
-            <p class="text-[#ED544E] dark:text-[#a75b59] text-xs">23,5%</p>
+            <p class="text-[#ED544E] dark:text-red-600 text-xs">23,5%</p>
           </div>
           <p class="text-[#606060] dark:text-[#A5D7E8] text-sm">vs. previous month</p>
         </div>
@@ -66,10 +66,10 @@
         <p class="text-2xl font-semibold leading-none">1567</p>
         <div class="flex gap-2">
           <div
-            class="rounded-full bg-[#FDEAEA] dark:bg-[#f5a5a5dc]  flex px-2 py-1 gap-2 items-center"
+            class="rounded-full bg-[#FDEAEA] dark:bg-red-200  flex px-2 py-1 gap-2 items-center"
           >
             <img src="../assets/loss.svg" alt="" />
-            <p class="text-[#ED544E] dark:text-[#ED544E] text-xs">23,5%</p>
+            <p class="text-[#ED544E] dark:text-red-600 text-xs">23,5%</p>
           </div>
           <p class="text-[#606060] dark:text-[#A5D7E8] text-sm">vs. previous month</p>
         </div>
