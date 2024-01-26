@@ -1,5 +1,5 @@
 <template>
-  <section class="flex gap-5 flex-col">
+  <section class="flex gap-5 flex-col relative">
     <div class="flex gap-5 flex-col xl:flex-row">
       <Salestrends /> 
       <Metrics />
@@ -8,6 +8,6 @@
       <Lastorders /> 
       <Topplatform />
     </div>
+    <NuxtPage />
   </section>
-  <NuxtPage />
 </template>
