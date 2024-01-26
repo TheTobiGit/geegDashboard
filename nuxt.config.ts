@@ -4,14 +4,12 @@ export default defineNuxtConfig({
   modules: [
     "@nuxtjs/tailwindcss",
     "nuxt-icon",
-    "@nuxtjs/device",
-    "@nuxtjs/color-mode"
+    "@nuxtjs/color-mode",
   ],
 
   css: ['~/assets/css/main.css'],
 
-  device: {
-    refreshOnResize: true
+  colorMode: {
+    classSuffix: ''
   }
-
 })

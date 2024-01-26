@@ -1,16 +1,16 @@
 <template>
 <section class="h-max border border-[#E5EAEF] p-4 rounded-2xl bg-[#FFFFFF] w-full flex flex-col gap-2 xl:w-[63.4%] dark:bg-[#19376D] dark:border-none ">
-    <div class="flex justify-between items-center">
-        <p class=" text-lg font-semibold">Last Order</p>
+    <div class="flex items-center justify-between">
+        <p class="text-lg font-semibold ">Last Order</p>
         <button class=" text-[#35CAA5]">See All</button>
     </div>
 
-    <div class=" flex ">
+    <div class="flex ">
         <div class="lg:w-[30%] md:w-[30%] w-[37%] flex flex-col gap-3">
             <p class="text-[#9CA4AB] dark:text-[#A5D7E8]">Name</p>
-            <div v-for="user in users" :key="user.id" class=" flex border border-x-0 border-b-0 border-t pt-2 gap-2 items-center">
-              <div :style="{ backgroundImage: 'url(' + user.img + ')'}" class=" w-6 h-6 bg-cover bg-no-repeat rounded-full bg-center hidden md:block"></div>
-                <p class="  font-medium truncate">{{ user.name }}</p>
+            <div v-for="user in users" :key="user.id" class="flex items-center gap-2 pt-2 border border-t border-b-0 border-x-0">
+              <div :style="{ backgroundImage: 'url(' + user.img + ')'}" class="hidden w-6 h-6 bg-center bg-no-repeat bg-cover rounded-full md:block"></div>
+                <p class="font-medium truncate ">{{ user.name }}</p>
             </div>
         </div>
         <div class="lg:w-[20%] md:w-[25%] w-[32%] flex flex-col gap-3">
@@ -19,16 +19,17 @@
         </div>
         <div class="lg:-w-[20%] md:w-[25%] w-[31%] flex flex-col gap-3">
             <p class="text-[#9CA4AB] dark:text-[#A5D7E8]">Amount</p>
-            <p v-for="user in users" :key="user.id" class=" border border-x-0 border-b-0 border-t pt-2 font-medium">{{ user.amount }}</p>
+            <p v-for="user in users" :key="user.id" class="pt-2 font-medium border border-t border-b-0 border-x-0">{{ user.amount }}</p>
         </div>
         <div class="w-[20%] hidden md:flex flex-col gap-3">
             <p class="text-[#9CA4AB] dark:text-[#A5D7E8]">Status</p>
-            <p v-for="user in users" :key="user.id" class=" border border-x-0 border-b-0 border-t pt-2" :class="{'text-[#35CAA5]': user.status == 'Paid', 'text-[#ED544E]': user.status == 'Refund'}">{{ user.status }}</p>
+            <p v-for="user in users" :key="user.id" class="pt-2 border border-t border-b-0 border-x-0" :class="{'text-[#35CAA5]': user.status == 'Paid', 'text-[#ED544E]': user.status == 'Refund'}">{{ user.status }}</p>
         </div>
         <div class="w-[10%] hidden lg:flex flex-col gap-3">
             <p class="text-[#9CA4AB] dark:text-[#A5D7E8]">Invoice</p>
-            <button v-for="user in users" :key="user.id" class=" flex gap-1 items-center pt-2  border border-x-0 border-b-0 border-t">
-                <img src="../assets/invoice.svg" alt="">
+            <button v-for="user in users" :key="user.id" class="flex items-center gap-1 pt-2 border border-t border-b-0 border-x-0">
+                <!-- <img src="../assets/invoice.svg" alt=""> -->
+                <Icon name="iconamoon:invoice" size="1rem" />
                 <p class="font-normal ">{{ user.invoice }}</p>
             </button>
         </div>

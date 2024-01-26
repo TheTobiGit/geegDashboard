@@ -6,57 +6,75 @@
       <img src="../assets/vector.svg" alt="" />
     </NuxtLink>
     <div class="flex flex-col gap-[20px] mb-[20px] items-center">
-      <button class="flex group-hover:self-start gap-2">
-        <img src="../assets/category.svg" alt=""  />
-        <p class="hidden group-hover:block overflow-hidden">category</p>
+      <button class="flex gap-2 transition-all duration-300 group-hover:self-start hover:scale-110">
+        <Icon name="bxs:category" size="1.5rem" />
+        <p class="hidden overflow-hidden group-hover:block">category</p>
       </button>
-      <button class="flex group-hover:self-start gap-2">
-        <img src="../assets/trend-up.svg" alt="" />
-        <p class="hidden group-hover:block group-visited:block overflow-hidden">trends</p>
+      <button class="flex gap-2 transition-all duration-300 group-hover:self-start hover:scale-110">
+        <Icon name="solar:graph-up-broken" size="1.5rem" />
+        <p class="hidden overflow-hidden group-hover:block group-visited:block">trends</p>
       </button>
-      <NuxtLink class="flex group-hover:self-start gap-2" to="/home/profile">
-        <img src="../assets/profile-2user.svg" alt="" />
-        <p class="hidden group-hover:block overflow-hidden">profiles</p>
+      <NuxtLink class="flex gap-2 transition-all duration-300 group-hover:self-start hover:scale-110" >
+        <Icon name="solar:users-group-rounded-broken" size="1.5rem" />
+        <p class="hidden overflow-hidden group-hover:block">profiles</p>
       </NuxtLink>
-      <button class="flex group-hover:self-start gap-2">
-        <img src="../assets/box.svg" alt="" />
-        <p class="hidden group-hover:block overflow-hidden">boxes</p>
+      <button class="flex gap-2 transition-all duration-300 group-hover:self-start hover:scale-110">
+        <Icon name="solar:box-broken" size="1.5rem" />
+        <p class="hidden overflow-hidden group-hover:block">boxes</p>
       </button>
-      <button class="flex group-hover:self-start gap-2">
-        <img src="../assets/discount-shape.svg" alt="" />
-        <p class="hidden group-hover:block overflow-hidden">discount</p>
+      <button class="flex gap-2 transition-all duration-300 group-hover:self-start hover:scale-110">
+        <Icon name="circum:discount-1" size="1.5rem" />
+        <p class="hidden overflow-hidden group-hover:block">discount</p>
       </button>
-      <button class="flex group-hover:self-start gap-2">
-        <img src="../assets/info-circle.svg" alt="" />
-        <p class="hidden group-hover:block overflow-hidden">info</p>
+      <button class="flex gap-2 transition-all duration-300 group-hover:self-start hover:scale-110">
+        <Icon name="solar:info-circle-broken" size="1.5rem" />
+        <p class="hidden overflow-hidden group-hover:block">info</p>
       </button>
     </div>
 
+
     <div
-      class="rounded-full flex flex-col items-center justify-center gap-4 p-1 xl:p-2 bg-white dark:bg-[#19376D]"
+      class="rounded-full flex flex-col items-center justify-center gap-3 p-1 bg-white dark:bg-[#19376D]"
     >
-      <button>
-        <img
-          src="../assets/sun.svg"
-          alt=""
-          class="bg-[#35CAA5] rounded-full p-1 dark:rounded-none dark:bg-transparent"
-        />
+      <button @click="isLight" class="bg-[#35CAA5] rounded-full p-1 dark:rounded-none dark:bg-transparent text-white">
+        <Icon name="ic:baseline-wb-sunny" size="1.5rem" />
       </button>
-      <button>
-        <img src="../assets/moon.svg" class=" dark:rounded-full p-1 bg-[#1D2D44]" alt="" />
+      <button @click="isDark" class="dark:rounded-full p-1 dark:bg-[#1D2D44] text-[#B2AAAB]">
+        <Icon name="material-symbols:nights-stay" size="1.5rem" />
       </button>
     </div>
 
     <div class="flex flex-col gap-[20px] items-center py-4 mt-auto">
-      <button>
-        <img src="../assets/arrow-right.svg" alt="" />
+      <button class="flex gap-2 transition-all duration-300 group-hover:self-start hover:scale-110">
+        <Icon name="solar:round-arrow-right-broken" size="1.5rem" />
+        <p class="hidden overflow-hidden group-hover:block">utils</p>
       </button>
-      <button>
-        <img src="../assets/setting.svg" alt="" />
+      <button class="flex gap-2 transition-all duration-300 group-hover:self-start hover:scale-110">
+        <Icon name="solar:settings-broken" size="1.5rem" />
+        <p class="hidden overflow-hidden group-hover:block">settings</p>
       </button>
-      <button>
-        <img src="../assets/logout.svg" alt="" />
+      <button class="flex gap-2 transition-all duration-300 group-hover:self-start hover:scale-110">
+        <Icon name="solar:logout-broken" size="1.5rem" class="rotate-180"/>
+        <p class="hidden overflow-hidden group-hover:block">logout</p>
       </button>
     </div>
   </section>
 </template>
+
+<script setup>
+const colorMode = useColorMode();
+
+function isLight() {
+  colorMode.preference = "light";
+}
+
+function isDark() {
+  colorMode.preference = "dark";
+}
+
+</script>
+
+<style >
+
+</style>
+
