@@ -2,6 +2,7 @@
 
 body {
 font-family: 'Plus Jakarta Sans', sans-serif;
+@apply dark:text-white
 }
 
 ::-webkit-scrollbar {

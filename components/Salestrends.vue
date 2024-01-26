@@ -1,6 +1,6 @@
 <template>
   <section
-    class="h-[374px] border border-[#E5EAEF] p-4 rounded-2xl bg-[#FFFFFF] grow"
+    class="h-[374px] border border-[#E5EAEF] p-4 rounded-2xl bg-[#FFFFFF] dark:bg-[#19376D] grow dark:border-none"
   >
     <div class="flex justify-between items-center">
       <p class=" text-lg font-semibold">Sales Trends</p>

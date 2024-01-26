@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex flex-col items-center pb-4 bg-[#F7F8FA] h-svh border border-r border-l-0 border-t-0 border-y-0 w-[5vw] 2xl:w-[3vw] hover:w-[10vw] 2xl:hover:w-[7vw] transition-all duration-700 group "
+    class="flex flex-col items-center pb-4 bg-[#F7F8FA] h-svh border dark:border-[#1D2D44] border-r border-l-0 border-t-0 border-y-0 w-[5vw] 2xl:w-[3vw] hover:w-[10vw] 2xl:hover:w-[7vw] transition-all duration-200 group dark:bg-[#0B2447] dark:shadow-md"
   >
     <NuxtLink to="/" class="h-[10vh] flex items-center justify-center">
       <img src="../assets/vector.svg" alt="" />
@@ -33,17 +33,17 @@
     </div>
 
     <div
-      class="rounded-full flex flex-col items-center justify-center gap-4 p-1 xl:p-2 bg-white"
+      class="rounded-full flex flex-col items-center justify-center gap-4 p-1 xl:p-2 bg-white dark:bg-[#19376D]"
     >
       <button>
         <img
           src="../assets/sun.svg"
           alt=""
-          class="bg-[#35CAA5] rounded-full p-1"
+          class="bg-[#35CAA5] rounded-full p-1 dark:rounded-none dark:bg-transparent"
         />
       </button>
       <button>
-        <img src="../assets/moon.svg" alt="" />
+        <img src="../assets/moon.svg" class=" dark:rounded-full p-1 bg-[#1D2D44]" alt="" />
       </button>
     </div>
 
