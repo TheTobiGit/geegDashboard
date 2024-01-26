@@ -1,8 +1,8 @@
 <template>
-  <section class=" flex gap-5 flex-col lg:flex-row">
+  <section class=" flex gap-5 flex-col xl:flex-row">
   
-      <!-- <Salestrends />
+      <Salestrends />
       <Metrics />
-     -->
+    
   </section>
 </template>

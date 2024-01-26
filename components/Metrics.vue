@@ -1,8 +1,8 @@
 <template>
-  <section class="flex flex-col justify-between w-max gap-5">
-    <div class="flex gap-5">
+  <section class="flex flex-col justify-between gap-5 w-full xl:w-max">
+    <div class="flex flex-col md:flex-row gap-5">
       <div
-        class="border-2 border-[#E5EAEF] rounded-2xl flex flex-col p-4 gap-3 bg-[#FFFFFF]"
+        class="border-2 border-[#E5EAEF] rounded-2xl flex flex-col p-4 gap-3 bg-[#FFFFFF] grow"
       >
         <div class="flex justify-between">
           <img
@@ -26,7 +26,7 @@
       </div>
 
       <div
-        class="border-2 border-[#E5EAEF] rounded-2xl flex flex-col p-4 gap-3 bg-[#FFFFFF]"
+        class="border-2 border-[#E5EAEF] rounded-2xl flex flex-col p-4 gap-3 bg-[#FFFFFF] grow"
       >
         <div class="flex justify-between">
           <img
@@ -50,9 +50,9 @@
       </div>
     </div>
 
-    <div class="flex gap-5">
+    <div class=" flex flex-col-reverse md:flex-row gap-5">
       <div
-        class="border-2 border-[#E5EAEF] rounded-2xl flex flex-col p-4 gap-3 bg-[#FFFFFF]"
+        class="border-2 border-[#E5EAEF] rounded-2xl flex flex-col p-4 gap-3 bg-[#FFFFFF] grow"
       >
         <div class="flex justify-between">
           <img
@@ -76,7 +76,7 @@
       </div>
 
       <div
-        class="border-2 border-[#E5EAEF] rounded-2xl flex flex-col p-4 gap-3 bg-[#FFFFFF]"
+        class="border-2 border-[#E5EAEF] rounded-2xl flex flex-col p-4 gap-3 bg-[#FFFFFF] grow"
       >
         <div class="flex justify-between">
           <img

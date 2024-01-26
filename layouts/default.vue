@@ -1,15 +1,15 @@
 <template>
 <section class=" w-screen flex">
 
-    <div class="w-[5vw] hidden lg:block">
+    <div class=" hidden h-screen sticky top-0 lg:block">
         <Panel />
     </div>
 
-    <div class=" w-full">
+    <div class=" grow">
         <div>
             <Header />
         </div>
-        <div class="p-5 bg-[#FAFAFA]">
+        <div class="md:p-5 p-3 bg-[#FAFAFA]">
             <slot />
         </div>
     </div>

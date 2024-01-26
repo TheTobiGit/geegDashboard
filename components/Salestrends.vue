@@ -6,7 +6,7 @@
       <p class=" text-lg font-semibold">Sales Trends</p>
       <div class=" flex gap-3 items-center relative">
         <p>Short by :</p>
-        <select name="range" id="range" class=" border-2 rounded-full appearance-none pl-3 pr-5  py-2 text-sm">
+        <select name="range" id="range" class=" border-2 rounded-full appearance-none pl-3 pr-5 py-2 text-sm">
           <optgroup>
             <option value="Daily">Daily</option>
             <option value="Weekly" selected>Weekly</option>
