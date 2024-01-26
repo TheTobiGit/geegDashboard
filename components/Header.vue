@@ -49,7 +49,7 @@
         </div>
         <div class="xl:flex flex-col text-right hidden">
           <p class="text-base">Gideon Sarfo</p>
-          <p class="text-sm text-[#787486]">gideonsarfo@gmail.com</p>
+          <p class="text-sm text-[#787486]">aemonsarfo@outlook.com</p>
         </div>
         <button><img src="../assets/arrow-down.svg" alt="" /></button>
       </div>
@@ -74,7 +74,6 @@ watchEffect(() => {
 
 function updateFormattedDate() {
   formattedDate = computed(() => {
-    console.log(formattedDate);
     return rawDate.value ? formatDate(rawDate.value) : temp;
   });
 
