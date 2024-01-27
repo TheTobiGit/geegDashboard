@@ -1,5 +1,5 @@
 <template>
-<section class="h-max border border-[#E5EAEF] p-4 rounded-2xl bg-[#FFFFFF] w-full flex flex-col gap-2 xl:w-[63.4%] dark:bg-[#19376D] dark:border-none ">
+<section class="h-max border border-[#E5EAEF] p-4 rounded-2xl bg-[#FFFFFF] w-full flex flex-col gap-2 xl:w-[63.4%] dark:bg-[#1D1D1D] dark:border-[#2A2A2A] ">
     <div class="flex items-center justify-between">
         <p class="text-lg font-semibold ">Last Order</p>
         <button class=" text-[#35CAA5]">See All</button>
@@ -7,28 +7,27 @@
 
     <div class="flex ">
         <div class="lg:w-[30%] md:w-[30%] w-[37%] flex flex-col gap-3">
-            <p class="text-[#9CA4AB] dark:text-[#A5D7E8]">Name</p>
-            <div v-for="user in users" :key="user.id" class="flex items-center gap-2 pt-2 border border-t border-b-0 border-x-0">
+            <p class="text-[#9CA4AB] dark:text-[#737373]">Name</p>
+            <div v-for="user in users" :key="user.id" class="flex items-center gap-2 pt-2 border dark:border-[#2A2A2A] border-t border-b-0 border-x-0">
               <div :style="{ backgroundImage: 'url(' + user.img + ')'}" class="hidden w-6 h-6 bg-center bg-no-repeat bg-cover rounded-full md:block"></div>
                 <p class="font-medium truncate ">{{ user.name }}</p>
             </div>
         </div>
         <div class="lg:w-[20%] md:w-[25%] w-[32%] flex flex-col gap-3">
-            <p class="text-[#9CA4AB] dark:text-[#A5D7E8]">Date</p>
-            <p v-for="user in users" :key="user.id" class=" border border-x-0 border-b-0 border-t pt-2 text-[#737373] dark:text-[#A5D7E8]">{{ user.date }}</p>
+            <p class="text-[#9CA4AB] dark:text-[#737373]">Date</p>
+            <p v-for="user in users" :key="user.id" class=" border border-x-0 border-b-0 border-t pt-2 text-[#737373] dark:text-[#A3A3A3] dark:border-[#2A2A2A]">{{ user.date }}</p>
         </div>
         <div class="lg:-w-[20%] md:w-[25%] w-[31%] flex flex-col gap-3">
-            <p class="text-[#9CA4AB] dark:text-[#A5D7E8]">Amount</p>
-            <p v-for="user in users" :key="user.id" class="pt-2 font-medium border border-t border-b-0 border-x-0">{{ user.amount }}</p>
+            <p class="text-[#9CA4AB] dark:text-[#737373]">Amount</p>
+            <p v-for="user in users" :key="user.id" class="pt-2 font-medium border border-t border-b-0 border-x-0 dark:border-[#2A2A2A]">{{ user.amount }}</p>
         </div>
         <div class="w-[20%] hidden md:flex flex-col gap-3">
-            <p class="text-[#9CA4AB] dark:text-[#A5D7E8]">Status</p>
-            <p v-for="user in users" :key="user.id" class="pt-2 border border-t border-b-0 border-x-0" :class="{'text-[#35CAA5]': user.status == 'Paid', 'text-[#ED544E]': user.status == 'Refund'}">{{ user.status }}</p>
+            <p class="text-[#9CA4AB] dark:text-[#737373]">Status</p>
+            <p v-for="user in users" :key="user.id" class="pt-2 border border-t border-b-0 border-x-0 dark:border-[#2A2A2A]" :class="{'text-[#35CAA5]': user.status == 'Paid', 'text-[#ED544E]': user.status == 'Refund'}">{{ user.status }}</p>
         </div>
         <div class="w-[10%] hidden lg:flex flex-col gap-3">
-            <p class="text-[#9CA4AB] dark:text-[#A5D7E8]">Invoice</p>
-            <button v-for="user in users" :key="user.id" class="flex items-center gap-1 pt-2 border border-t border-b-0 border-x-0">
-                <!-- <img src="../assets/invoice.svg" alt=""> -->
+            <p class="text-[#9CA4AB] dark:text-[#737373]">Invoice</p>
+            <button v-for="user in users" :key="user.id" class="flex items-center gap-1 pt-2 border border-t border-b-0 border-x-0 dark:border-[#2A2A2A]">
                 <Icon name="iconamoon:invoice" size="1rem" />
                 <p class="font-normal ">{{ user.invoice }}</p>
             </button>
