@@ -98,25 +98,4 @@ const chartOptions = ref({
   },
 });
 
-onMounted(() => {
-  // You need to wait for the next tick to ensure the canvas has been mounted
-  nextTick(() => {
-    const canvas = document.querySelector('canvas');
-    // Make sure the canvas exists
-    if (canvas && canvas.getContext) {
-      const ctx = canvas.getContext('2d');
-      const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-      gradient.addColorStop(0, '#34CAA5');
-      gradient.addColorStop(1, 'rgba(52, 202, 165, 0.00)');
-      
-      // Apply this gradient to hover background color of all datasets
-      chartData.value.datasets.forEach((dataset) => {
-        dataset.hoverBackgroundColor = gradient;
-      });
-      
-      // We should update the chart here, but since we are defining the chartData before chart creation, it's not necessary.
-    }
-  });
-});
-
 </script>
