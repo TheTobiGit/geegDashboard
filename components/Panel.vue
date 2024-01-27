@@ -34,7 +34,7 @@
 
 
     <div
-      class="rounded-full flex flex-col items-center justify-center gap-3 p-2 bg-white dark:bg-[#181818]"
+      class="rounded-full flex lg:flex-col items-center justify-center gap-3 p-2 bg-white dark:bg-[#181818]"
     >
       <button @click="isLight" class="bg-[#35CAA5] rounded-full p-1 dark:rounded-none dark:bg-transparent text-white dark:text-[#A3A3A3] transition-all duration-300">
         <Icon name="ic:baseline-wb-sunny" size="1.5rem" />
