@@ -6,27 +6,27 @@
       <img src="/vector.svg" alt="" />
     </NuxtLink>
     <div class="flex flex-col gap-[20px] mb-[20px] items-center">
-      <button class="flex gap-2 md:transition-all md:duration-300 self-start lg:self-auto group-hover:self-start hover:scale-110 dark:text-[#737373] dark:hover:text-[#35CAA5] text-[#B2AAAB] hover:text-inherit">
+      <button class="flex gap-2 transition-all duration-300 self-start lg:self-auto group-hover:self-start hover:scale-110 dark:text-[#737373] dark:hover:text-[#35CAA5] text-[#B2AAAB] hover:text-inherit">
         <Icon name="bxs:category" size="1.5rem" class="" />
         <p class="overflow-hidden lg:hidden group-hover:block">category</p>
       </button>
-      <button class="flex gap-2 md:transition-all md:duration-300  self-start lg:self-auto group-hover:self-start hover:scale-110 dark:text-[#737373] dark:hover:text-[#35CAA5] text-[#B2AAAB] hover:text-inherit">
+      <button class="flex gap-2 transition-all duration-300  self-start lg:self-auto group-hover:self-start hover:scale-110 dark:text-[#737373] dark:hover:text-[#35CAA5] text-[#B2AAAB] hover:text-inherit">
         <Icon name="solar:graph-up-broken" size="1.5rem" class=""/>
         <p class="self-start overflow-hidden lg:hidden group-hover:block lg:self-auto group-visited:block">trends</p>
       </button>
-      <button class="flex gap-2 md:transition-all md:duration-300 self-start lg:self-auto group-hover:self-start hover:scale-110 dark:text-[#737373] dark:hover:text-[#35CAA5] text-[#B2AAAB] hover:text-inherit" >
+      <button class="flex gap-2 transition-all duration-300 self-start lg:self-auto group-hover:self-start hover:scale-110 dark:text-[#737373] dark:hover:text-[#35CAA5] text-[#B2AAAB] hover:text-inherit" >
         <Icon name="solar:users-group-rounded-broken" size="1.5rem" class="" />
         <p class="overflow-hidden lg:hidden group-hover:block">profiles</p>
       </button>
-      <button class="flex gap-2 md:transition-all md:duration-300 self-start lg:self-auto group-hover:self-start hover:scale-110 dark:text-[#737373] dark:hover:text-[#35CAA5] text-[#B2AAAB] hover:text-inherit">
+      <button class="flex gap-2 transition-all duration-300 self-start lg:self-auto group-hover:self-start hover:scale-110 dark:text-[#737373] dark:hover:text-[#35CAA5] text-[#B2AAAB] hover:text-inherit">
         <Icon name="solar:box-broken" size="1.5rem" class=""/>
         <p class="overflow-hidden lg:hidden group-hover:block">boxes</p>
       </button>
-      <button class="flex gap-2 md:transition-all md:duration-300  self-start lg:self-auto group-hover:self-start hover:scale-110 dark:text-[#737373] dark:hover:text-[#35CAA5] text-[#B2AAAB] hover:text-inherit">
+      <button class="flex gap-2 transition-all duration-300  self-start lg:self-auto group-hover:self-start hover:scale-110 dark:text-[#737373] dark:hover:text-[#35CAA5] text-[#B2AAAB] hover:text-inherit">
         <Icon name="circum:discount-1" size="1.5rem" class=""/>
         <p class="overflow-hidden lg:hidden group-hover:block">discount</p>
       </button>
-      <button class="flex gap-2 md:transition-all md:duration-300  self-start lg:self-auto group-hover:self-start hover:scale-110 dark:text-[#737373] dark:hover:text-[#35CAA5] text-[#B2AAAB] hover:text-inherit">
+      <button class="flex gap-2 transition-all duration-300  self-start lg:self-auto group-hover:self-start hover:scale-110 dark:text-[#737373] dark:hover:text-[#35CAA5] text-[#B2AAAB] hover:text-inherit">
         <Icon name="solar:info-circle-broken" size="1.5rem" class=""/>
         <p class="overflow-hidden lg:hidden group-hover:block">info</p>
       </button>
@@ -45,15 +45,15 @@
     </div>
 
     <div class="flex flex-col gap-[20px] items-center py-4 mt-auto">
-      <button class="flex gap-2 md:transition-all md:duration-300lg:transition-all lg:duration-300  self-start lg:self-auto group-hover:self-start hover:scale-110 dark:text-[#737373] dark:hover:text-[#35CAA5] text-[#B2AAAB] hover:text-inherit">
+      <button class="flex gap-2 transition-all duration-300lg:transition-all lg:duration-300  self-start lg:self-auto group-hover:self-start hover:scale-110 dark:text-[#737373] dark:hover:text-[#35CAA5] text-[#B2AAAB] hover:text-inherit">
         <Icon name="solar:round-arrow-right-broken" size="1.5rem" class=""/>
         <p class="overflow-hidden lg:hidden group-hover:block">utils</p>
       </button>
-      <button class="flex gap-2 md:transition-all md:duration-300  self-start lg:self-auto group-hover:self-start hover:scale-110 dark:text-[#737373] dark:hover:text-[#35CAA5] text-[#B2AAAB] hover:text-inherit">
+      <button class="flex gap-2 transition-all duration-300  self-start lg:self-auto group-hover:self-start hover:scale-110 dark:text-[#737373] dark:hover:text-[#35CAA5] text-[#B2AAAB] hover:text-inherit">
         <Icon name="solar:settings-broken" size="1.5rem" class=""/>
         <p class="overflow-hidden lg:hidden group-hover:block">settings</p>
       </button>
-      <button class="flex gap-2 md:transition-all md:duration-300  self-start lg:self-auto group-hover:self-start hover:scale-110 dark:text-[#737373] hover:text-red-500 dark:hover:text-red-500 text-[#B2AAAB]">
+      <button class="flex gap-2 transition-all duration-300  self-start lg:self-auto group-hover:self-start hover:scale-110 dark:text-[#737373] hover:text-red-500 dark:hover:text-red-500 text-[#B2AAAB]">
         <Icon name="solar:logout-broken" size="1.5rem" class="rotate-180 hover:text-red-500"  />
         <p class="overflow-hidden lg:hidden group-hover:block">logout</p>
       </button>

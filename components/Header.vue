@@ -92,20 +92,20 @@
 
     <div
       :class="{ 'lg:flex': panelShown, hidden: !panelShown }"
-      class="h-screen lg:hidden absolute left-0 top-0 w-[30vw] md:w-[18vw]"
+      class="h-screen lg:hidden absolute left-0 top-0 w-[40vw] md:w-[18vw]"
     >
       <Panel class="transition-all duration-700" />
       <div
         @click="showPanel"
         :class="{ 'lg:flex': panelShown, hidden: !panelShown }"
-        class="absolute top-2 lg:hidden left-[23vw] sm:left-[25vw] md:left-[14vw] cursor-pointer"
+        class="absolute top-2 lg:hidden left-[33vw] sm:left-[35vw] md:left-[14vw] cursor-pointer"
       >
         <Icon name="material-symbols:close-rounded" size="1.5rem" />
       </div>
       <div
         v-if="panelShown"
         @click="showPanel"
-        class="fixed inset-0 z-40 bg-black bg-opacity-50 ml-[30vw] md:ml-[18vw] w-full"
+        class="fixed inset-0 z-40 bg-black bg-opacity-50 ml-[40vw] md:ml-[18vw] w-full"
       ></div>
     </div>
   </section>

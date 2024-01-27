@@ -1,6 +1,6 @@
 <template>
   <section
-    class="h-[374px] border border-[#E5EAEF] p-4 rounded-2xl bg-[#FFFFFF] dark:bg-[#1D1D1D]  dark:border-[#2A2A2A] overflow-x-scroll w-[99.5%]"
+    class="h-[374px] border border-[#E5EAEF] p-4 rounded-2xl bg-[#FFFFFF] dark:bg-[#1D1D1D]  dark:border-[#2A2A2A] w-[99.5%]"
   >
     <div class="flex items-center justify-between">
       <p class="text-lg font-semibold">Sales Trends</p>
@@ -22,8 +22,8 @@
       </div>
     </div>
 
-    <div class="h-[92%] w-full overflow-x-scroll">
-      <Bar ref="barChart" :data="chartData" :options="chartOptions" class="overflow-x-scroll " />
+    <div class="h-[92%] w-full ">
+      <Bar ref="barChart" :data="chartData" :options="chartOptions" class="" />
     </div>
   </section>
 </template>
