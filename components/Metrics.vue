@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col justify-between w-full gap-5 xl:w-max">
+  <section class="flex flex-col justify-between w-full gap-5  2xl:w-[53%]">
     <div class="flex flex-col gap-5 md:flex-row *:dark:bg-[#1D1D1D] *:dark:border-[#2A2A2A]">
       <div
         class="border-2 border-[#E5EAEF] rounded-2xl flex flex-col p-4 gap-3 bg-[#FFFFFF] grow"

@@ -18,5 +18,9 @@
     "nuxt-primevue": "^0.2.2",
     "vue": "^3.4.14",
     "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.1",
+    "vue-chartjs": "^5.3.0"
   }
 }
