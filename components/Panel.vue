@@ -3,7 +3,7 @@
     class="flex flex-col items-center pb-4 bg-[#F7F8FA] h-svh border dark:border-[#2A2A2A] border-r border-l-0 border-t-0 border-y-0 w-[5vw] 2xl:w-[3vw] hover:w-[10vw] 2xl:hover:w-[7vw] transition-all duration-200 group dark:bg-[#1D1D1D]"
   >
     <NuxtLink to="/" class="h-[10vh] flex items-center justify-center">
-      <img src="../assets/vector.svg" alt="" />
+      <img src="/vector.svg" alt="" />
     </NuxtLink>
     <div class="flex flex-col gap-[20px] mb-[20px] items-center">
       <button class="flex gap-2 transition-all duration-300 group-hover:self-start hover:scale-110 dark:text-[#737373] dark:hover:text-[#35CAA5] text-[#B2AAAB] hover:text-inherit">
