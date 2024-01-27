@@ -1,8 +1,8 @@
 <template>
   <section
-    class="h-[10vh] flex items-center border border-b dark:border-[#2A2A2A] border-x-0 border-t-0 px-5 bg-[#FAFAFA] dark:bg-[#1D1D1D]"
+    class="h-[10vh] flex items-center border border-b dark:border-[#2A2A2A] border-x-0 border-t-0 px-5 bg-[#FAFAFA] dark:bg-[#1D1D1D] relative"
   >
-    <button class="flex lg:hidden">
+    <button @click="showPanel" class="flex lg:hidden">
       <Icon name="heroicons:bars-3-bottom-left-16-solid" size="1.5rem" />
     </button>
     <p class="hidden text-xl font-semibold lg:flex">Dashboard</p>
@@ -89,6 +89,25 @@
         </div>
       </div>
     </div>
+
+    <div
+      :class="{ 'lg:flex': panelShown, hidden: !panelShown }"
+      class="h-screen lg:hidden absolute left-0 top-0 w-[30vw] md:w-[18vw]"
+    >
+      <Panel class="transition-all duration-700" />
+      <div
+        @click="showPanel"
+        :class="{ 'lg:flex': panelShown, hidden: !panelShown }"
+        class="absolute top-2 lg:hidden left-[23vw] sm:left-[25vw] md:left-[14vw] cursor-pointer"
+      >
+        <Icon name="material-symbols:close-rounded" size="1.5rem" />
+      </div>
+      <div
+        v-if="panelShown"
+        @click="showPanel"
+        class="fixed inset-0 z-40 bg-black bg-opacity-50 ml-[30vw] md:ml-[18vw] w-full"
+      ></div>
+    </div>
   </section>
 </template>
 
@@ -99,8 +118,14 @@ let formattedDate = ref(null);
 
 let accountDropdown = ref(false);
 
+let panelShown = ref(false);
+
 function accountDrop() {
   accountDropdown.value = !accountDropdown.value;
+}
+
+function showPanel() {
+  panelShown.value = !panelShown.value;
 }
 
 const temp = new Date().toLocaleDateString("en-US", {

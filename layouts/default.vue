@@ -1,7 +1,7 @@
 <template>
 <section class="flex w-screen ">
 
-    <div class="sticky top-0 hidden h-screen  lg:block">
+    <div class="sticky top-0 hidden h-screen lg:block">
         <Panel />
     </div>
 
